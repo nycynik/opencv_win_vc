@@ -1,3 +1,21 @@
+# Visual studio cache/options dir
+.vs/
+
+# Visual studio user specific fils
+*.user
+*.ruser
+*.suo
+*.userscache
+*.sln.docstates
+
+# build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+
 # Prerequisites
 *.d
 
