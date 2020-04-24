@@ -19,9 +19,13 @@ int main()
 		return -1;
 	}
 
+	// x, y, width, height
+	cv::Rect wheelROI(10, 130, 140, 180);
+	Mat img2 = img(wheelROI);
+
 	String windowName = "Biycle";
 	namedWindow(windowName);
-	imshow(windowName, img);
+	imshow(windowName, img2);
 
 	// generate a window
 	Mat image = Mat::zeros(300, 600, CV_8UC3);
