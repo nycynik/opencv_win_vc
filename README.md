@@ -14,5 +14,6 @@
 ## credit
 
 Setup found in this blog: https://medium.com/@subwaymatch/opencv-410-with-vs-2019-3d0bc0c81d96
+Information on Image manipulation: https://docs.opencv.org/2.4/opencv_tutorials.pdf
 
 Updated to CV 4.3.0.
