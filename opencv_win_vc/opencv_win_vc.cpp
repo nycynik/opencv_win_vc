@@ -166,6 +166,19 @@ int main()
 	circle(image, Point(350, 150), 100, Scalar(255, 255, 255), -100);
 	imshow("Display Window", image);
 
+	// save a file
+	bool isSaved = imwrite("./MyImage.jpg", img3); // save as JPEG, we can use other filenames to save as alt formats, like .png
+	
+	if (isSaved == false) {
+
+		cout << "Failed to save the image" << endl;
+		cin.get(); //wait for a key press
+	}
+	else {
+		cout << "Image is succusfully saved to a file" << endl;
+	}
+	
+
 	waitKey(0);
 	destroyWindow(windowName);
 }
