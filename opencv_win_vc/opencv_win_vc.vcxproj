@@ -150,10 +150,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="opencv_win_vc.cpp" />
+    <ClCompile Include="MyOCV_ImageIO.cpp" />
+    <ClCompile Include="opencv_image_utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="catch.hpp" />
+    <ClInclude Include="MyOCV_ImageIO.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
