@@ -23,6 +23,9 @@ public:
 	// Image color manipulation
 	static Mat reduce(Mat& img, int divWidth); 
 
+	// Blending
+	static Mat blend(Mat a, Mat b, double alpha);
+
 private:
 	static Mat& scanImageAndReduce(Mat& I, const uchar* const table);
 };

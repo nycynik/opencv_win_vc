@@ -36,6 +36,7 @@ int MyOCV_ImageIO::saveImage(Mat img, String pathname) {
 
 }
 
+// Image manipulation
 int MyOCV_ImageIO::cropImage(Mat& dst, Mat src, long x, long y, long width, long height) {
 	
 	// check that x,y,w,h are all in the mat bounds.
@@ -49,6 +50,17 @@ int MyOCV_ImageIO::cropImage(Mat& dst, Mat src, long x, long y, long width, long
 	
 	return 0;
 
+}
+
+Mat MyOCV_ImageIO::blend(Mat a, Mat b, double alpha) {
+
+	if (a.rows != b.rows || a.cols != b.cols) {
+		throw new Exception();
+	}
+
+	Mat dst;
+	addWeighted(a, alpha, b, (1.0 - alpha), 0.0, dst);
+	return dst;
 }
 
 // fastest way to scan an image and do some operation on it

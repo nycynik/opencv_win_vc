@@ -44,6 +44,13 @@ int main()
 	t = ((double)getTickCount() - t) / getTickFrequency();
 	cout << "c method in seconds               : " << t << endl;
 
+	// blend two images
+	Mat dolph_img;
+	if (MyOCV_ImageIO::loadImage(dolph_img, "images/dolphin.png") == 0) {
+		Mat img4 = MyOCV_ImageIO::blend(img, dolph_img, .3);
+		imshow("Blend", img4);
+	}
+
 	// generate a window
 	Mat image = Mat::zeros(300, 600, CV_8UC3);
 	circle(image, Point(250, 150), 100, Scalar(0, 255, 128), -100);
