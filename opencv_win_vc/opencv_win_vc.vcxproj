@@ -75,7 +75,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\nycyn\dev\libs\opencv\build\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\nycyn\dev\mike\opencv_win_vc\opencv_win_vc\include;C:\Users\nycyn\dev\libs\opencv\build\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\nycyn\dev\libs\opencv\build\x64\vc15\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -157,8 +157,8 @@
     <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="catch.hpp" />
     <ClInclude Include="MyOCV_ImageIO.hpp" />
+    <ClInclude Include="opencv_image_utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

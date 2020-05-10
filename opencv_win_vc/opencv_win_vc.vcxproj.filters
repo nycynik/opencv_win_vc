@@ -26,10 +26,10 @@
     <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="catch.hpp">
+    <ClInclude Include="MyOCV_ImageIO.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MyOCV_ImageIO.hpp">
+    <ClInclude Include="opencv_image_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
